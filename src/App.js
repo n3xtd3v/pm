@@ -99,9 +99,9 @@ function App() {
   }, [airOutSideData]);
 
   return (
-    <div className="flex gap-0.5 p-1 bg-white h-screen w-screen text-[#303f49] 2xl:p-14 2xl:justify-center lg:flex-col 2xl:flex-row 2xl:gap-2 lg:p-10">
-      <div className="flex flex-col basis-1/3 justify-center items-center font-medium 2xl:gap-28">
-        <div className="flex flex-col items-center lg:gap-10">
+    <div className="flex justify-center gap-0.5 p-1 bg-white h-screen w-screen text-[#303f49] 2xl:p-14 2xl:justify-center lg:flex-col 2xl:flex-row 2xl:gap-2 lg:p-10 lg:gap-6 lg:justify-center">
+      <div className="flex flex-col justify-center items-center font-medium max-sm:w-[140px] 2xl:gap-40 2xl:w-[500px]">
+        <div className="flex flex-col items-center lg:gap-0 2xl:gap-6">
           <p className="2xl:text-7xl lg:text-8xl">
             {month[d.getMonth()]} {d.getDate()}
           </p>
@@ -124,7 +124,7 @@ function App() {
         </div>
       </div>
 
-      <div className="flex flex-col justify-center basis-2/3 gap-3 lg:gap-6 2xl:gap-16">
+      <div className="flex flex-col justify-center gap-3 lg:gap-6 max-sm:gap-3">
         <AirCard
           title={`Medpark Hospital Building`}
           aqi={airInSideData.AQI_CN}
@@ -138,7 +138,7 @@ function App() {
         />
       </div>
 
-      <div className="hidden lg:flex lg:flex-col lg:text-center lg:gap-5 2xl:hidden">
+      <div className="hidden lg:flex lg:flex-col lg:text-center lg:gap-1 2xl:hidden">
         <div className="bg-[#303f49] text-white lg:rounded-full lg:text-7xl lg:py-1">
           AQI Level
         </div>
