@@ -126,7 +126,7 @@ function App() {
 
       <div className="flex flex-col justify-center gap-3 lg:gap-6 max-sm:gap-3">
         <AirCard
-          title={`Medpark Hospital Building`}
+          title={`MedPark Hospital Building`}
           aqi={airInSideData.AQI_CN}
           pm={airInSideData.PM2_5}
         />

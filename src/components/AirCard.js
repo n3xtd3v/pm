@@ -44,7 +44,7 @@ const AirCard = ({ title, aqi, pm }) => {
             AIR QUALITY INDEX
           </p>
           <div className="text-[45px] leading-none font-medium 2xl:text-[250px] lg:text-[150px]">
-            {aqi}
+            {Math.trunc(aqi)}
           </div>
         </div>
 
